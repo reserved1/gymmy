@@ -31,7 +31,6 @@ struct SelectRoutineView: View {
                 Spacer()
             }
             Form {
-                // link to exercise
                 List {
                     ForEach($routine.exercises, id: \.id) { $exercise in
                             ExerciseGridCellView(exercise: $exercise)
@@ -42,9 +41,11 @@ struct SelectRoutineView: View {
                     }
                     .onMove(perform: routine.moveExercises(fromOffsets:toOffSet:))
                     .onDelete(perform: deleteExercise)
-                    .listStyle(.inset)
+                    .onChange(of: routine.exercises, perform: { newValue in
+                        routineController.saveRoutines()
+                    })
+                    .listStyle(.plain)
                 }
-
             }
             HStack {
                 Button {

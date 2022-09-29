@@ -59,5 +59,6 @@ struct AddExerciseView: View {
         let newExercise = Exercise(name: name, observations: observations, descriptions: descriptions, complete: false)
         exerciseController.addToExercise(newExercise)
         routineExercises.append(newExercise)
+        routineController.saveRoutines()
     }
 }

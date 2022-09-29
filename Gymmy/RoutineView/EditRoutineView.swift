@@ -3,6 +3,8 @@ import SwiftUI
 
 struct EditRoutineView: View {
 
+    @EnvironmentObject var routineController: RoutineController
+
     @Binding var routine: Routine
 
     @Binding var checkEdited: Bool
@@ -42,5 +44,6 @@ struct EditRoutineView: View {
 
     func editRoutine() {
         routine.name = name
+        routineController.updateRoutine(routine)
     }
 }

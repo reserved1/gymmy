@@ -22,6 +22,9 @@
 		EE36F07828E4EF7A00D9016B /* EditRoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE36F07728E4EF7A00D9016B /* EditRoutineView.swift */; };
 		EE36F07A28E4F2F200D9016B /* EditExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE36F07928E4F2F200D9016B /* EditExerciseView.swift */; };
 		EE36F07C28E5064B00D9016B /* ExerciseDropDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE36F07B28E5064B00D9016B /* ExerciseDropDelegate.swift */; };
+		EE36F07E28E5910100D9016B /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE36F07D28E5910100D9016B /* Enums.swift */; };
+		EE36F08028E592F800D9016B /* FilePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE36F07F28E592F800D9016B /* FilePersistence.swift */; };
+		EE36F08328E5A04200D9016B /* ButtonPressAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE36F08228E5A04200D9016B /* ButtonPressAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,9 @@
 		EE36F07728E4EF7A00D9016B /* EditRoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRoutineView.swift; sourceTree = "<group>"; };
 		EE36F07928E4F2F200D9016B /* EditExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditExerciseView.swift; sourceTree = "<group>"; };
 		EE36F07B28E5064B00D9016B /* ExerciseDropDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDropDelegate.swift; sourceTree = "<group>"; };
+		EE36F07D28E5910100D9016B /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		EE36F07F28E592F800D9016B /* FilePersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePersistence.swift; sourceTree = "<group>"; };
+		EE36F08228E5A04200D9016B /* ButtonPressAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPressAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,7 @@
 		EE36F05228E4B3DB00D9016B /* Gymmy */ = {
 			isa = PBXGroup;
 			children = (
+				EE36F08128E598C900D9016B /* TestFeature */,
 				EE36F05328E4B3DB00D9016B /* GymmyApp.swift */,
 				EE36F05528E4B3DB00D9016B /* HomeView.swift */,
 				EE36F06E28E4CC6700D9016B /* ExerciseView */,
@@ -81,6 +88,8 @@
 				EE36F05928E4B3DC00D9016B /* Preview Content */,
 				EE36F06128E4B53F00D9016B /* AppModel.swift */,
 				EE36F06328E4B5B400D9016B /* AppModelController.swift */,
+				EE36F07D28E5910100D9016B /* Enums.swift */,
+				EE36F07F28E592F800D9016B /* FilePersistence.swift */,
 			);
 			path = Gymmy;
 			sourceTree = "<group>";
@@ -110,10 +119,18 @@
 				EE36F06F28E4CC8300D9016B /* ExerciseGridCellView.swift */,
 				EE36F07128E4CCC000D9016B /* SelectExerciseView.swift */,
 				EE36F07328E4CD9A00D9016B /* AddExerciseView.swift */,
-				EE36F07928E4F2F200D9016B /* EditExerciseView.swift */,
-				EE36F07B28E5064B00D9016B /* ExerciseDropDelegate.swift */,
 			);
 			path = ExerciseView;
+			sourceTree = "<group>";
+		};
+		EE36F08128E598C900D9016B /* TestFeature */ = {
+			isa = PBXGroup;
+			children = (
+				EE36F07B28E5064B00D9016B /* ExerciseDropDelegate.swift */,
+				EE36F07928E4F2F200D9016B /* EditExerciseView.swift */,
+				EE36F08228E5A04200D9016B /* ButtonPressAction.swift */,
+			);
+			path = TestFeature;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,10 +206,13 @@
 				EE36F07C28E5064B00D9016B /* ExerciseDropDelegate.swift in Sources */,
 				EE36F07028E4CC8300D9016B /* ExerciseGridCellView.swift in Sources */,
 				EE36F07228E4CCC000D9016B /* SelectExerciseView.swift in Sources */,
+				EE36F08028E592F800D9016B /* FilePersistence.swift in Sources */,
 				EE36F07428E4CD9A00D9016B /* AddExerciseView.swift in Sources */,
+				EE36F07E28E5910100D9016B /* Enums.swift in Sources */,
 				EE36F07828E4EF7A00D9016B /* EditRoutineView.swift in Sources */,
 				EE36F06828E4BDE000D9016B /* AddRoutineView.swift in Sources */,
 				EE36F05628E4B3DB00D9016B /* HomeView.swift in Sources */,
+				EE36F08328E5A04200D9016B /* ButtonPressAction.swift in Sources */,
 				EE36F06428E4B5B400D9016B /* AppModelController.swift in Sources */,
 				EE36F06228E4B53F00D9016B /* AppModel.swift in Sources */,
 				EE36F06B28E4BF8000D9016B /* SelectRoutineView.swift in Sources */,

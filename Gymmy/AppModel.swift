@@ -1,7 +1,9 @@
 import Foundation
 import SwiftUI
 
-class Routine: ObservableObject {
+
+
+class Routine: ObservableObject, Codable {
     @Published var id = UUID()
     @Published var name: String
     @Published var exercises: [Exercise]
@@ -23,7 +25,26 @@ class Routine: ObservableObject {
     func moveExercises(fromOffsets source: IndexSet, toOffSet destination: Int) {
         exercises.move(fromOffsets: source, toOffset: destination)
     }
+
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: RoutineKeys.self)
+
+        try container.encode(id, forKey: .id)
+
+        try container.encode(name, forKey: .name)
+
+        try container.encode(exercises, forKey: .exercises)
+    }
+
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: RoutineKeys.self)
+
+        id = try container.decode(UUID.self, forKey: .id)
+        name = try container.decode(String.self, forKey: .name)
+        exercises = try container.decode([Exercise].self, forKey: .exercises)
+    }
 }
+
 
 struct Exercise: Hashable, Codable {
     var id = UUID()
