@@ -25,6 +25,7 @@
 		EE36F07E28E5910100D9016B /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE36F07D28E5910100D9016B /* Enums.swift */; };
 		EE36F08028E592F800D9016B /* FilePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE36F07F28E592F800D9016B /* FilePersistence.swift */; };
 		EE36F08328E5A04200D9016B /* ButtonPressAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE36F08228E5A04200D9016B /* ButtonPressAction.swift */; };
+		EE36F08528E5CA6700D9016B /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE36F08428E5CA6700D9016B /* SplashScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		EE36F07D28E5910100D9016B /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		EE36F07F28E592F800D9016B /* FilePersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePersistence.swift; sourceTree = "<group>"; };
 		EE36F08228E5A04200D9016B /* ButtonPressAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPressAction.swift; sourceTree = "<group>"; };
+		EE36F08428E5CA6700D9016B /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				EE36F07B28E5064B00D9016B /* ExerciseDropDelegate.swift */,
 				EE36F07928E4F2F200D9016B /* EditExerciseView.swift */,
 				EE36F08228E5A04200D9016B /* ButtonPressAction.swift */,
+				EE36F08428E5CA6700D9016B /* SplashScreenView.swift */,
 			);
 			path = TestFeature;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE36F08528E5CA6700D9016B /* SplashScreenView.swift in Sources */,
 				EE36F07C28E5064B00D9016B /* ExerciseDropDelegate.swift in Sources */,
 				EE36F07028E4CC8300D9016B /* ExerciseGridCellView.swift in Sources */,
 				EE36F07228E4CCC000D9016B /* SelectExerciseView.swift in Sources */,
@@ -354,7 +358,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,7 +387,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -26,7 +26,7 @@ struct HomeView: View {
                                 checkAdd.toggle()
                             } label: {
                                 Image(systemName: "plus")
-                                    .scaleEffect(x: 1.4, y: 1.4)
+                                    .scaleEffect(x: 1.2, y: 1.2)
                             }
                             .padding(.trailing, 15)
                         }
@@ -58,7 +58,7 @@ struct HomeView: View {
                             checkAdd.toggle()
                         } label: {
                             Image(systemName: "plus")
-                                .scaleEffect(x: 1.4, y: 1.4)
+                                .scaleEffect(x: 1.2, y: 1.2)
                         }
                         .padding(.trailing, 15)
                     }
