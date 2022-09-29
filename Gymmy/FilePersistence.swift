@@ -1,6 +1,6 @@
 import Foundation
 
-let fileName = ".GymmySave.json"
+let fileName = "GymmySave.json"
 
 extension FileManager {
     static var docDirURL: URL {

@@ -26,6 +26,23 @@ struct ExerciseGridCellView: View {
                         .scaleEffect(isPressed ? 2.0 : 1.0)
                     Spacer()
                 }
+                .onLongPressGesture(minimumDuration: 0.2) {
+                    let impact = UIImpactFeedbackGenerator(style: .heavy)
+                    impact.impactOccurred()
+                    exercise.complete.toggle()
+                } onPressingChanged: { _ in
+                    let impact2 = UIImpactFeedbackGenerator(style: .soft)
+                    impact2.impactOccurred()
+                }
+                .pressEvents {
+                    withAnimation(.easeIn(duration: 0.5)) {
+                        isPressed = true
+                    }
+                } onRelease: {
+                    withAnimation {
+                        isPressed = false
+                    }
+                }
             }
             .background(
                 NavigationLink(destination: SelectExerciseView(exercise: $exercise), isActive: $isActived, label: {
@@ -38,23 +55,6 @@ struct ExerciseGridCellView: View {
         }
         .onTapGesture {
             self.isActived.toggle()
-        }
-        .onLongPressGesture(minimumDuration: 0.2) {
-            let impact = UIImpactFeedbackGenerator(style: .heavy)
-            impact.impactOccurred()
-            exercise.complete.toggle()
-        } onPressingChanged: { _ in
-            let impact2 = UIImpactFeedbackGenerator(style: .soft)
-            impact2.impactOccurred()
-        }
-        .pressEvents {
-            withAnimation(.easeIn(duration: 0.5)) {
-                isPressed = true
-            }
-        } onRelease: {
-            withAnimation {
-                isPressed = false
-            }
         }
         .edgesIgnoringSafeArea(.all)
     }

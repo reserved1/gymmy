@@ -1,8 +1,6 @@
 import Foundation
 import SwiftUI
 
-
-
 class Routine: ObservableObject, Codable {
     @Published var id = UUID()
     @Published var name: String
@@ -45,20 +43,12 @@ class Routine: ObservableObject, Codable {
     }
 }
 
-
 struct Exercise: Hashable, Codable {
     var id = UUID()
     var name: String
     var observations: String?
     var descriptions: String?
     var complete: Bool
-}
-
-extension Exercise {
-    static let exercise1 = Exercise(name: "Exercício 1", observations: "Observação do Exercício 1", descriptions: "Descrição do Exercício 1", complete: false)
-    static let exercise2 = Exercise(name: "Exercício 2", observations: "Observação do Exercício 2", descriptions: "Descrição do Exercício 2", complete: false)
-    static let exercise3 = Exercise(name: "Exercício 3", observations: "Observação do Exercício 3", descriptions: "Descrição do Exercício 3", complete: false)
-    static let exercise4 = Exercise(name: "Exercício 4", observations: "Observação do Exercício 4", descriptions: "Descrição do Exercício 4", complete: false)
 }
 
 extension Array: RawRepresentable where Element: Codable {
